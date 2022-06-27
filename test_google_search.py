@@ -10,7 +10,7 @@ def test_search_selene_in_google(open_google):
 
 
 def test_do_not_search_selene_in_google(open_google):
-    search_in_google('hello world!')
+    search_in_google('hello world')
     browser.element('#search').should(have.no.text(expected_selene_search_result))
 
 
